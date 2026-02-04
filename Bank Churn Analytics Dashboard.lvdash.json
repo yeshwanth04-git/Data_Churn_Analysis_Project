@@ -4,7 +4,7 @@
       "name": "63c1ec0f",
       "displayName": "active_female_high_balance_long_term",
       "queryLines": [
-        "SELECT * FROM bank_analytics_project.gold.active_female_high_balance_long_term"
+        "SELECT * FROM bank_analytics_project.gold.active_female_high_balance_long_term "
       ],
       "catalog": "bank_analytics_project",
       "schema": "gold"
@@ -31,7 +31,7 @@
       "name": "e160c946",
       "displayName": "active_zero_balance_customers",
       "queryLines": [
-        "SELECT * FROM bank_analytics_project.gold.active_zero_balance_customers"
+        "SELECT * FROM bank_analytics_project.gold.active_zero_balance_customers "
       ],
       "catalog": "bank_analytics_project",
       "schema": "gold"
@@ -40,7 +40,7 @@
       "name": "eed1e2bf",
       "displayName": "exited_high_balance",
       "queryLines": [
-        "SELECT * FROM bank_analytics_project.gold.exited_high_balance"
+        "SELECT * FROM bank_analytics_project.gold.exited_high_balance "
       ],
       "catalog": "bank_analytics_project",
       "schema": "gold"
@@ -49,7 +49,7 @@
       "name": "f476efb4",
       "displayName": "high_salary_customers",
       "queryLines": [
-        "SELECT * FROM bank_analytics_project.gold.high_salary_customers"
+        "SELECT * FROM bank_analytics_project.gold.high_salary_customers "
       ],
       "catalog": "bank_analytics_project",
       "schema": "gold"
@@ -100,40 +100,8 @@
                       "expression": "`CreditScore`"
                     },
                     {
-                      "name": "Geography",
-                      "expression": "`Geography`"
-                    },
-                    {
-                      "name": "Gender",
-                      "expression": "`Gender`"
-                    },
-                    {
-                      "name": "Age",
-                      "expression": "`Age`"
-                    },
-                    {
-                      "name": "Tenure",
-                      "expression": "`Tenure`"
-                    },
-                    {
-                      "name": "EstimatedSalaryINR",
-                      "expression": "`EstimatedSalaryINR`"
-                    },
-                    {
-                      "name": "NumOfProducts",
-                      "expression": "`NumOfProducts`"
-                    },
-                    {
-                      "name": "HasCrCard",
-                      "expression": "`HasCrCard`"
-                    },
-                    {
                       "name": "IsActiveMember",
                       "expression": "`IsActiveMember`"
-                    },
-                    {
-                      "name": "Exited",
-                      "expression": "`Exited`"
                     },
                     {
                       "name": "BalanceINR",
@@ -151,139 +119,348 @@
                 "columns": [
                   {
                     "fieldName": "CustomerId",
-                    "title": "CustomerId",
+                    "numberFormat": "0",
                     "booleanValues": [
                       "false",
                       "true"
                     ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
                     "type": "integer",
-                    "displayAs": "number"
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100000,
+                    "title": "CustomerId",
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "Surname",
-                    "title": "Surname",
                     "booleanValues": [
                       "false",
                       "true"
                     ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
                     "type": "string",
-                    "displayAs": "string"
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100001,
+                    "title": "Surname",
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "CreditScore",
+                    "numberFormat": "0",
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "type": "integer",
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100002,
                     "title": "CreditScore",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "Geography",
-                    "title": "Geography",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "string",
-                    "displayAs": "string"
-                  },
-                  {
-                    "fieldName": "Gender",
-                    "title": "Gender",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "string",
-                    "displayAs": "string"
-                  },
-                  {
-                    "fieldName": "Age",
-                    "title": "Age",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "Tenure",
-                    "title": "Tenure",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "EstimatedSalaryINR",
-                    "title": "EstimatedSalaryINR",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "float",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "NumOfProducts",
-                    "title": "NumOfProducts",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "HasCrCard",
-                    "title": "HasCrCard",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "string",
-                    "displayAs": "string"
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "IsActiveMember",
-                    "title": "IsActiveMember",
                     "booleanValues": [
                       "false",
                       "true"
                     ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
                     "type": "string",
-                    "displayAs": "string"
-                  },
-                  {
-                    "fieldName": "Exited",
-                    "title": "Exited",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 100010,
+                    "title": "IsActiveMember",
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "BalanceINR",
-                    "title": "BalanceINR",
+                    "numberFormat": "0.00",
                     "booleanValues": [
                       "false",
                       "true"
                     ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
                     "type": "float",
-                    "displayAs": "number"
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 100012,
+                    "title": "BalanceINR",
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   }
                 ]
               },
-              "invisibleColumns": [],
+              "invisibleColumns": [
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Geography",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100003,
+                  "title": "Geography",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Gender",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100004,
+                  "title": "Gender",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Age",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100005,
+                  "title": "Age",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Tenure",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100006,
+                  "title": "Tenure",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0.00",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "EstimatedSalaryINR",
+                  "type": "float",
+                  "displayAs": "number",
+                  "order": 100007,
+                  "title": "EstimatedSalaryINR",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "NumOfProducts",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100008,
+                  "title": "NumOfProducts",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "HasCrCard",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100009,
+                  "title": "HasCrCard",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Exited",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100011,
+                  "title": "Exited",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                }
+              ],
               "allowHTMLByDefault": false,
-              "itemsPerPage": 25,
+              "itemsPerPage": 200,
               "paginationSize": "default",
               "condensed": true,
               "withRowNumber": false,
@@ -291,11 +468,17 @@
                 "title": "Table of Active Female with High Balance for Long Term",
                 "showTitle": true
               }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#0C110D",
+                "dark": "#BEAE0D"
+              }
             }
           },
           "position": {
             "x": 0,
-            "y": 0,
+            "y": 17,
             "width": 3,
             "height": 6
           }
@@ -310,6 +493,10 @@
                   "datasetName": "b89b1c26",
                   "fields": [
                     {
+                      "name": "Geography",
+                      "expression": "`Geography`"
+                    },
+                    {
                       "name": "CustomerId",
                       "expression": "`CustomerId`"
                     },
@@ -318,48 +505,12 @@
                       "expression": "`Surname`"
                     },
                     {
-                      "name": "CreditScore",
-                      "expression": "`CreditScore`"
-                    },
-                    {
-                      "name": "Geography",
-                      "expression": "`Geography`"
-                    },
-                    {
                       "name": "Gender",
                       "expression": "`Gender`"
                     },
                     {
-                      "name": "Age",
-                      "expression": "`Age`"
-                    },
-                    {
-                      "name": "Tenure",
-                      "expression": "`Tenure`"
-                    },
-                    {
                       "name": "EstimatedSalaryINR",
                       "expression": "`EstimatedSalaryINR`"
-                    },
-                    {
-                      "name": "NumOfProducts",
-                      "expression": "`NumOfProducts`"
-                    },
-                    {
-                      "name": "HasCrCard",
-                      "expression": "`HasCrCard`"
-                    },
-                    {
-                      "name": "IsActiveMember",
-                      "expression": "`IsActiveMember`"
-                    },
-                    {
-                      "name": "Exited",
-                      "expression": "`Exited`"
-                    },
-                    {
-                      "name": "BalanceINR",
-                      "expression": "`BalanceINR`"
                     }
                   ],
                   "disaggregated": true
@@ -372,140 +523,349 @@
               "encodings": {
                 "columns": [
                   {
-                    "fieldName": "CustomerId",
-                    "title": "CustomerId",
+                    "fieldName": "Geography",
                     "booleanValues": [
                       "false",
                       "true"
                     ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 0,
+                    "title": "Geography",
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
+                  },
+                  {
+                    "fieldName": "CustomerId",
+                    "numberFormat": "0",
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
                     "type": "integer",
-                    "displayAs": "number"
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 6,
+                    "title": "CustomerId",
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "Surname",
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "type": "string",
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 7,
                     "title": "Surname",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "string",
-                    "displayAs": "string"
-                  },
-                  {
-                    "fieldName": "CreditScore",
-                    "title": "CreditScore",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "Geography",
-                    "title": "Geography",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "string",
-                    "displayAs": "string"
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "Gender",
-                    "title": "Gender",
                     "booleanValues": [
                       "false",
                       "true"
                     ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
                     "type": "string",
-                    "displayAs": "string"
-                  },
-                  {
-                    "fieldName": "Age",
-                    "title": "Age",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "Tenure",
-                    "title": "Tenure",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
+                    "displayAs": "string",
+                    "visible": true,
+                    "order": 9,
+                    "title": "Gender",
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   },
                   {
                     "fieldName": "EstimatedSalaryINR",
+                    "numberFormat": "0.00",
+                    "booleanValues": [
+                      "false",
+                      "true"
+                    ],
+                    "imageUrlTemplate": "{{ @ }}",
+                    "imageTitleTemplate": "{{ @ }}",
+                    "imageWidth": "",
+                    "imageHeight": "",
+                    "linkUrlTemplate": "{{ @ }}",
+                    "linkTextTemplate": "{{ @ }}",
+                    "linkTitleTemplate": "{{ @ }}",
+                    "linkOpenInNewTab": true,
+                    "type": "float",
+                    "displayAs": "number",
+                    "visible": true,
+                    "order": 11,
                     "title": "EstimatedSalaryINR",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "float",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "NumOfProducts",
-                    "title": "NumOfProducts",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "HasCrCard",
-                    "title": "HasCrCard",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "string",
-                    "displayAs": "string"
-                  },
-                  {
-                    "fieldName": "IsActiveMember",
-                    "title": "IsActiveMember",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "string",
-                    "displayAs": "string"
-                  },
-                  {
-                    "fieldName": "Exited",
-                    "title": "Exited",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "integer",
-                    "displayAs": "number"
-                  },
-                  {
-                    "fieldName": "BalanceINR",
-                    "title": "BalanceINR",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "type": "float",
-                    "displayAs": "number"
+                    "allowSearch": false,
+                    "alignContent": "left",
+                    "allowHTML": false,
+                    "highlightLinks": false,
+                    "useMonospaceFont": false,
+                    "preserveWhitespace": false
                   }
                 ]
               },
-              "invisibleColumns": [],
+              "invisibleColumns": [
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Age",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 1,
+                  "title": "Age",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "NumOfProducts",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 2,
+                  "title": "NumOfProducts",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "HasCrCard",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 3,
+                  "title": "HasCrCard",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "IsActiveMember",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 4,
+                  "title": "IsActiveMember",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Exited",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 5,
+                  "title": "Exited",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "CreditScore",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 8,
+                  "title": "CreditScore",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Tenure",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 10,
+                  "title": "Tenure",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0.00",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "BalanceINR",
+                  "type": "float",
+                  "displayAs": "number",
+                  "order": 12,
+                  "title": "BalanceINR",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                }
+              ],
               "allowHTMLByDefault": false,
-              "itemsPerPage": 25,
+              "itemsPerPage": 500,
               "paginationSize": "default",
               "condensed": true,
               "withRowNumber": false,
@@ -513,11 +873,17 @@
                 "title": "Customers with Credit Score more than 600 and still with the bank",
                 "showTitle": true
               }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#323326",
+                "dark": "#BA9A09"
+              }
             }
           },
           "position": {
             "x": 3,
-            "y": 0,
+            "y": 17,
             "width": 3,
             "height": 6
           }
@@ -568,19 +934,34 @@
                   "scale": {
                     "type": "categorical"
                   }
+                },
+                "label": {
+                  "show": true
                 }
               },
               "frame": {
                 "showTitle": true,
-                "title": "Count of Young Customers in each Geography"
+                "title": "Count of Young Customers in each Geography",
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#0CE9CE"
+                }
+              }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#343F32",
+                "dark": "#A47015"
               }
             }
           },
           "position": {
-            "x": 0,
-            "y": 6,
+            "x": 3,
+            "y": 4,
             "width": 3,
-            "height": 6
+            "height": 7
           }
         },
         {
@@ -605,16 +986,8 @@
                       "expression": "`CreditScore`"
                     },
                     {
-                      "name": "Geography",
-                      "expression": "`Geography`"
-                    },
-                    {
                       "name": "Gender",
                       "expression": "`Gender`"
-                    },
-                    {
-                      "name": "Age",
-                      "expression": "`Age`"
                     },
                     {
                       "name": "Tenure",
@@ -623,30 +996,6 @@
                     {
                       "name": "EstimatedSalaryINR",
                       "expression": "`EstimatedSalaryINR`"
-                    },
-                    {
-                      "name": "NumOfProducts",
-                      "expression": "`NumOfProducts`"
-                    },
-                    {
-                      "name": "HasCrCard",
-                      "expression": "`HasCrCard`"
-                    },
-                    {
-                      "name": "IsActiveMember",
-                      "expression": "`IsActiveMember`"
-                    },
-                    {
-                      "name": "Exited",
-                      "expression": "`Exited`"
-                    },
-                    {
-                      "name": "BalanceINR",
-                      "expression": "`BalanceINR`"
-                    },
-                    {
-                      "name": "Ingestion_time",
-                      "expression": "`Ingestion_time`"
                     }
                   ],
                   "disaggregated": true
@@ -679,7 +1028,7 @@
                     "order": 100000,
                     "title": "CustomerId",
                     "allowSearch": false,
-                    "alignContent": "right",
+                    "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
                     "useMonospaceFont": false,
@@ -732,32 +1081,6 @@
                     "order": 100002,
                     "title": "CreditScore",
                     "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Geography",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100003,
-                    "title": "Geography",
-                    "allowSearch": false,
                     "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
@@ -791,33 +1114,6 @@
                     "preserveWhitespace": false
                   },
                   {
-                    "fieldName": "Age",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100005,
-                    "title": "Age",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
                     "fieldName": "Tenure",
                     "numberFormat": "0",
                     "booleanValues": [
@@ -838,7 +1134,7 @@
                     "order": 100006,
                     "title": "Tenure",
                     "allowSearch": false,
-                    "alignContent": "right",
+                    "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
                     "useMonospaceFont": false,
@@ -865,167 +1161,7 @@
                     "order": 100007,
                     "title": "EstimatedSalaryINR",
                     "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "NumOfProducts",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100008,
-                    "title": "NumOfProducts",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "HasCrCard",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100009,
-                    "title": "HasCrCard",
-                    "allowSearch": false,
                     "alignContent": "left",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "IsActiveMember",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100010,
-                    "title": "IsActiveMember",
-                    "allowSearch": false,
-                    "alignContent": "left",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Exited",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100011,
-                    "title": "Exited",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "BalanceINR",
-                    "numberFormat": "0.00",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "float",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100012,
-                    "title": "BalanceINR",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Ingestion_time",
-                    "dateTimeFormat": "DD/MM/YYYY HH:mm:ss.SSS",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "datetime",
-                    "displayAs": "datetime",
-                    "visible": true,
-                    "order": 100013,
-                    "title": "Ingestion_time",
-                    "allowSearch": false,
-                    "alignContent": "right",
                     "allowHTML": false,
                     "highlightLinks": false,
                     "useMonospaceFont": false,
@@ -1033,7 +1169,213 @@
                   }
                 ]
               },
-              "invisibleColumns": [],
+              "invisibleColumns": [
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Geography",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100003,
+                  "title": "Geography",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Age",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100005,
+                  "title": "Age",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "NumOfProducts",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100008,
+                  "title": "NumOfProducts",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "HasCrCard",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100009,
+                  "title": "HasCrCard",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "IsActiveMember",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100010,
+                  "title": "IsActiveMember",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Exited",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100011,
+                  "title": "Exited",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0.00",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "BalanceINR",
+                  "type": "float",
+                  "displayAs": "number",
+                  "order": 100012,
+                  "title": "BalanceINR",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "dateTimeFormat": "DD/MM/YYYY HH:mm:ss.SSS",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Ingestion_time",
+                  "type": "datetime",
+                  "displayAs": "datetime",
+                  "order": 100013,
+                  "title": "Ingestion_time",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                }
+              ],
               "allowHTMLByDefault": false,
               "itemsPerPage": 25,
               "paginationSize": "default",
@@ -1043,11 +1385,17 @@
                 "showTitle": true,
                 "title": "Customers who are having 0 balance but still active\nwith the bank."
               }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#2A291E",
+                "dark": "#A98012"
+              }
             }
           },
           "position": {
             "x": 3,
-            "y": 6,
+            "y": 23,
             "width": 3,
             "height": 6
           }
@@ -1074,40 +1422,12 @@
                       "expression": "`CreditScore`"
                     },
                     {
-                      "name": "Geography",
-                      "expression": "`Geography`"
-                    },
-                    {
                       "name": "Gender",
                       "expression": "`Gender`"
                     },
                     {
-                      "name": "Age",
-                      "expression": "`Age`"
-                    },
-                    {
-                      "name": "Tenure",
-                      "expression": "`Tenure`"
-                    },
-                    {
-                      "name": "EstimatedSalaryINR",
-                      "expression": "`EstimatedSalaryINR`"
-                    },
-                    {
-                      "name": "NumOfProducts",
-                      "expression": "`NumOfProducts`"
-                    },
-                    {
                       "name": "HasCrCard",
                       "expression": "`HasCrCard`"
-                    },
-                    {
-                      "name": "IsActiveMember",
-                      "expression": "`IsActiveMember`"
-                    },
-                    {
-                      "name": "Exited",
-                      "expression": "`Exited`"
                     },
                     {
                       "name": "BalanceINR",
@@ -1144,7 +1464,7 @@
                     "order": 100000,
                     "title": "CustomerId",
                     "allowSearch": false,
-                    "alignContent": "right",
+                    "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
                     "useMonospaceFont": false,
@@ -1197,32 +1517,6 @@
                     "order": 100002,
                     "title": "CreditScore",
                     "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Geography",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100003,
-                    "title": "Geography",
-                    "allowSearch": false,
                     "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
@@ -1256,114 +1550,6 @@
                     "preserveWhitespace": false
                   },
                   {
-                    "fieldName": "Age",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100005,
-                    "title": "Age",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Tenure",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100006,
-                    "title": "Tenure",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "EstimatedSalaryINR",
-                    "numberFormat": "0.00",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "float",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100007,
-                    "title": "EstimatedSalaryINR",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "NumOfProducts",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100008,
-                    "title": "NumOfProducts",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
                     "fieldName": "HasCrCard",
                     "booleanValues": [
                       "false",
@@ -1390,59 +1576,6 @@
                     "preserveWhitespace": false
                   },
                   {
-                    "fieldName": "IsActiveMember",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100010,
-                    "title": "IsActiveMember",
-                    "allowSearch": false,
-                    "alignContent": "left",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Exited",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100011,
-                    "title": "Exited",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
                     "fieldName": "BalanceINR",
                     "numberFormat": "0.00",
                     "booleanValues": [
@@ -1463,7 +1596,7 @@
                     "order": 100012,
                     "title": "BalanceINR",
                     "allowSearch": false,
-                    "alignContent": "right",
+                    "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
                     "useMonospaceFont": false,
@@ -1471,21 +1604,209 @@
                   }
                 ]
               },
-              "invisibleColumns": [],
+              "invisibleColumns": [
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Geography",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100003,
+                  "title": "Geography",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Age",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100005,
+                  "title": "Age",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Tenure",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100006,
+                  "title": "Tenure",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0.00",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "EstimatedSalaryINR",
+                  "type": "float",
+                  "displayAs": "number",
+                  "order": 100007,
+                  "title": "EstimatedSalaryINR",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "NumOfProducts",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100008,
+                  "title": "NumOfProducts",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "IsActiveMember",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100010,
+                  "title": "IsActiveMember",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Exited",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100011,
+                  "title": "Exited",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                }
+              ],
               "allowHTMLByDefault": false,
               "itemsPerPage": 25,
               "paginationSize": "default",
               "condensed": true,
               "withRowNumber": false,
+              "firstNFrozenColumns": 0,
               "frame": {
                 "showTitle": true,
                 "title": "Customers with more than 100000 balance and exited."
+              }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#272B22",
+                "dark": "#B38815"
               }
             }
           },
           "position": {
             "x": 0,
-            "y": 12,
+            "y": 23,
             "width": 3,
             "height": 6
           }
@@ -1512,48 +1833,12 @@
                       "expression": "`CreditScore`"
                     },
                     {
-                      "name": "Geography",
-                      "expression": "`Geography`"
-                    },
-                    {
                       "name": "Gender",
                       "expression": "`Gender`"
                     },
                     {
-                      "name": "Age",
-                      "expression": "`Age`"
-                    },
-                    {
-                      "name": "Tenure",
-                      "expression": "`Tenure`"
-                    },
-                    {
-                      "name": "EstimatedSalaryINR",
-                      "expression": "`EstimatedSalaryINR`"
-                    },
-                    {
-                      "name": "NumOfProducts",
-                      "expression": "`NumOfProducts`"
-                    },
-                    {
-                      "name": "HasCrCard",
-                      "expression": "`HasCrCard`"
-                    },
-                    {
-                      "name": "IsActiveMember",
-                      "expression": "`IsActiveMember`"
-                    },
-                    {
-                      "name": "Exited",
-                      "expression": "`Exited`"
-                    },
-                    {
                       "name": "BalanceINR",
                       "expression": "`BalanceINR`"
-                    },
-                    {
-                      "name": "Ingestion_time",
-                      "expression": "`Ingestion_time`"
                     }
                   ],
                   "disaggregated": true
@@ -1586,7 +1871,7 @@
                     "order": 100000,
                     "title": "CustomerId",
                     "allowSearch": false,
-                    "alignContent": "right",
+                    "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
                     "useMonospaceFont": false,
@@ -1639,32 +1924,6 @@
                     "order": 100002,
                     "title": "CreditScore",
                     "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Geography",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100003,
-                    "title": "Geography",
-                    "allowSearch": false,
                     "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
@@ -1698,193 +1957,6 @@
                     "preserveWhitespace": false
                   },
                   {
-                    "fieldName": "Age",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100005,
-                    "title": "Age",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Tenure",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100006,
-                    "title": "Tenure",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "EstimatedSalaryINR",
-                    "numberFormat": "0.00",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "float",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100007,
-                    "title": "EstimatedSalaryINR",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "NumOfProducts",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100008,
-                    "title": "NumOfProducts",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "HasCrCard",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100009,
-                    "title": "HasCrCard",
-                    "allowSearch": false,
-                    "alignContent": "left",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "IsActiveMember",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "string",
-                    "displayAs": "string",
-                    "visible": true,
-                    "order": 100010,
-                    "title": "IsActiveMember",
-                    "allowSearch": false,
-                    "alignContent": "left",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Exited",
-                    "numberFormat": "0",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "integer",
-                    "displayAs": "number",
-                    "visible": true,
-                    "order": 100011,
-                    "title": "Exited",
-                    "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
                     "fieldName": "BalanceINR",
                     "numberFormat": "0.00",
                     "booleanValues": [
@@ -1905,34 +1977,7 @@
                     "order": 100012,
                     "title": "BalanceINR",
                     "allowSearch": false,
-                    "alignContent": "right",
-                    "allowHTML": false,
-                    "highlightLinks": false,
-                    "useMonospaceFont": false,
-                    "preserveWhitespace": false
-                  },
-                  {
-                    "fieldName": "Ingestion_time",
-                    "dateTimeFormat": "DD/MM/YYYY HH:mm:ss.SSS",
-                    "booleanValues": [
-                      "false",
-                      "true"
-                    ],
-                    "imageUrlTemplate": "{{ @ }}",
-                    "imageTitleTemplate": "{{ @ }}",
-                    "imageWidth": "",
-                    "imageHeight": "",
-                    "linkUrlTemplate": "{{ @ }}",
-                    "linkTextTemplate": "{{ @ }}",
-                    "linkTitleTemplate": "{{ @ }}",
-                    "linkOpenInNewTab": true,
-                    "type": "datetime",
-                    "displayAs": "datetime",
-                    "visible": true,
-                    "order": 100013,
-                    "title": "Ingestion_time",
-                    "allowSearch": false,
-                    "alignContent": "right",
+                    "alignContent": "left",
                     "allowHTML": false,
                     "highlightLinks": false,
                     "useMonospaceFont": false,
@@ -1940,9 +1985,241 @@
                   }
                 ]
               },
-              "invisibleColumns": [],
+              "invisibleColumns": [
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Geography",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100003,
+                  "title": "Geography",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Age",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100005,
+                  "title": "Age",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Tenure",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100006,
+                  "title": "Tenure",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0.00",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "EstimatedSalaryINR",
+                  "type": "float",
+                  "displayAs": "number",
+                  "order": 100007,
+                  "title": "EstimatedSalaryINR",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "NumOfProducts",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100008,
+                  "title": "NumOfProducts",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "HasCrCard",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100009,
+                  "title": "HasCrCard",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "IsActiveMember",
+                  "type": "string",
+                  "displayAs": "string",
+                  "order": 100010,
+                  "title": "IsActiveMember",
+                  "allowSearch": false,
+                  "alignContent": "left",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "numberFormat": "0",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Exited",
+                  "type": "integer",
+                  "displayAs": "number",
+                  "order": 100011,
+                  "title": "Exited",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                },
+                {
+                  "dateTimeFormat": "DD/MM/YYYY HH:mm:ss.SSS",
+                  "booleanValues": [
+                    "false",
+                    "true"
+                  ],
+                  "imageUrlTemplate": "{{ @ }}",
+                  "imageTitleTemplate": "{{ @ }}",
+                  "imageWidth": "",
+                  "imageHeight": "",
+                  "linkUrlTemplate": "{{ @ }}",
+                  "linkTextTemplate": "{{ @ }}",
+                  "linkTitleTemplate": "{{ @ }}",
+                  "linkOpenInNewTab": true,
+                  "name": "Ingestion_time",
+                  "type": "datetime",
+                  "displayAs": "datetime",
+                  "order": 100013,
+                  "title": "Ingestion_time",
+                  "allowSearch": false,
+                  "alignContent": "right",
+                  "allowHTML": false,
+                  "highlightLinks": false,
+                  "useMonospaceFont": false,
+                  "preserveWhitespace": false
+                }
+              ],
               "allowHTMLByDefault": false,
-              "itemsPerPage": 25,
+              "itemsPerPage": 500,
               "paginationSize": "default",
               "condensed": true,
               "withRowNumber": false,
@@ -1950,11 +2227,17 @@
                 "showTitle": true,
                 "title": "Customers whose estimated salary is more than 12L\nannually."
               }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#0F100C",
+                "dark": "#B69913"
+              }
             }
           },
           "position": {
-            "x": 3,
-            "y": 12,
+            "x": 0,
+            "y": 29,
             "width": 3,
             "height": 6
           }
@@ -2009,19 +2292,34 @@
                   "scale": {
                     "type": "categorical"
                   }
+                },
+                "label": {
+                  "show": true
                 }
               },
               "frame": {
                 "showTitle": true,
-                "title": "Based on geography customers who are with the\nbank for more than 5 years, dividing on gender."
+                "title": "Based on geography, customers who are with the\nbank for more than 5 years, dividing on gender.",
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#0EE2E2"
+                }
+              }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#554F3F",
+                "dark": "#7A7F17"
               }
             }
           },
           "position": {
             "x": 0,
-            "y": 18,
+            "y": 4,
             "width": 3,
-            "height": 6
+            "height": 7
           }
         },
         {
@@ -2070,19 +2368,262 @@
                   "scale": {
                     "type": "categorical"
                   }
+                },
+                "label": {
+                  "show": true
                 }
               },
               "frame": {
                 "showTitle": true,
-                "title": "Geography with most customers are inactive."
+                "title": "Geography with most customers are inactive.",
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#1AC0C0"
+                }
+              }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#1B2115",
+                "dark": "#ADAD13"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 11,
+            "width": 3,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "total-customers-count",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "63c1ec0f",
+                  "fields": [
+                    {
+                      "name": "count(CustomerId)",
+                      "expression": "COUNT(`CustomerId`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(CustomerId)"
+                }
+              },
+              "frame": {
+                "title": "Total Customers Count",
+                "showTitle": true,
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#BD9723"
+                }
+              }
+            },
+            "specExtensions": {
+              "widgetBackgroundColor": {
+                "dark": "#1C1511"
+              },
+              "widgetBorderColor": {
+                "light": "#16170F",
+                "dark": "#8A712E"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 2,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "total-credit-score",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "63c1ec0f",
+                  "fields": [
+                    {
+                      "name": "sum(CreditScore)",
+                      "expression": "SUM(`CreditScore`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(CreditScore)"
+                }
+              },
+              "frame": {
+                "title": "Total Credit Score",
+                "showTitle": true,
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#BD8931"
+                }
+              }
+            },
+            "specExtensions": {
+              "widgetBackgroundColor": {
+                "dark": "#1C1211"
+              },
+              "widgetBorderColor": {
+                "light": "#416433",
+                "dark": "#987928"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 0,
+            "width": 2,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "average-credit-score-geography",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "63c1ec0f",
+                  "fields": [
+                    {
+                      "name": "avg(CreditScore)",
+                      "expression": "AVG(`CreditScore`)"
+                    },
+                    {
+                      "name": "Geography",
+                      "expression": "`Geography`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "avg(CreditScore)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "Geography",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "title": "Average Credit Score by Geography",
+                "showTitle": true,
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#66E2D2"
+                }
+              }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "dark": "#9F6D15"
               }
             }
           },
           "position": {
             "x": 3,
-            "y": 18,
+            "y": 11,
             "width": 3,
             "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "total-customers-exited",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "63c1ec0f",
+                  "fields": [
+                    {
+                      "name": "sum(BalanceINR)",
+                      "expression": "SUM(`BalanceINR`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(BalanceINR)"
+                }
+              },
+              "frame": {
+                "title": "Total Balance of all customers",
+                "showTitle": true,
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#B4842A"
+                }
+              }
+            },
+            "specExtensions": {
+              "widgetBackgroundColor": {
+                "dark": "#1C1311"
+              },
+              "widgetBorderColor": {
+                "light": "#7FA063",
+                "dark": "#927E22"
+              }
+            }
+          },
+          "position": {
+            "x": 2,
+            "y": 0,
+            "width": 2,
+            "height": 4
           }
         }
       ],
