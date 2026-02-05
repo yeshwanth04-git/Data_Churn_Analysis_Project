@@ -912,6 +912,16 @@
             ],
             "spec": {
               "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Count of Young Customers in each Geography",
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#0CE9CE"
+                }
+              },
               "widgetType": "bar",
               "encodings": {
                 "x": {
@@ -925,6 +935,9 @@
                 },
                 "y": {
                   "fieldName": "sum(Active_young_customer_count)",
+                  "axis": {
+                    "hideGrid": true
+                  },
                   "scale": {
                     "type": "quantitative"
                   }
@@ -937,16 +950,6 @@
                 },
                 "label": {
                   "show": true
-                }
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Count of Young Customers in each Geography",
-                "headerAlignment": "center"
-              },
-              "style": {
-                "fontColor": {
-                  "dark": "#0CE9CE"
                 }
               }
             },
@@ -2270,6 +2273,16 @@
             ],
             "spec": {
               "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Based on geography, customers who are with the\nbank for more than 5 years, dividing on gender.",
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#0EE2E2"
+                }
+              },
               "widgetType": "bar",
               "encodings": {
                 "x": {
@@ -2283,6 +2296,9 @@
                 },
                 "y": {
                   "fieldName": "sum(Customer_count)",
+                  "axis": {
+                    "hideGrid": true
+                  },
                   "scale": {
                     "type": "quantitative"
                   }
@@ -2295,16 +2311,6 @@
                 },
                 "label": {
                   "show": true
-                }
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Based on geography, customers who are with the\nbank for more than 5 years, dividing on gender.",
-                "headerAlignment": "center"
-              },
-              "style": {
-                "fontColor": {
-                  "dark": "#0EE2E2"
                 }
               }
             },
@@ -2346,10 +2352,23 @@
             ],
             "spec": {
               "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Geography with most customers are inactive.",
+                "headerAlignment": "center"
+              },
+              "style": {
+                "fontColor": {
+                  "dark": "#1AC0C0"
+                }
+              },
               "widgetType": "bar",
               "encodings": {
                 "x": {
                   "fieldName": "sum(Inactive_customer_count)",
+                  "axis": {
+                    "hideGrid": true
+                  },
                   "scale": {
                     "type": "quantitative"
                   }
@@ -2371,16 +2390,6 @@
                 },
                 "label": {
                   "show": true
-                }
-              },
-              "frame": {
-                "showTitle": true,
-                "title": "Geography with most customers are inactive.",
-                "headerAlignment": "center"
-              },
-              "style": {
-                "fontColor": {
-                  "dark": "#1AC0C0"
                 }
               }
             },
